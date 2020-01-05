@@ -4,3 +4,11 @@
 <red-app></red-app>
 <green-app></green-app>
 <blue-app>  </blue-app>
+
+<label for = "Fname"> First Name</label>
+<input type="text" name = "Fname" placeholder="fname" [(ngModel)] = "name" >
+
+
+<p> {{name}}</p>
+<button (click)="resetName()" [disabled] = "checkName()" > Reset  </button>
+<!-- <button (click)="resetName()" [disabled] = name.length > Reset  </button> --> 

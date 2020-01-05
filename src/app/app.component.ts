@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
+  name = ''
+  state = false;
+
+  resetName(){
+    this.name = '';
+  }
+
+  checkName(){
+    if (this.name === ''){
+      this.state = true
+      return this.state
+    }
+  }
+
+
 }

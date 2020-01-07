@@ -10,6 +10,7 @@ export class AppComponent {
   name = ''
   state = false;
 
+  myparacontent = 'life is glorious gift, embrace whatever you have. If its easy then anyone can do it. life is glorious gift, embrace whatever you have. If its easy then anyone can do it'
   resetName(){
     this.name = '';
   }
@@ -20,6 +21,18 @@ export class AppComponent {
       return this.state
     }
   }
+  //toggle para
+  toggleState = true
+  counter = 0;
+  togglePara(){
 
+    this.toggleState = !this.toggleState
+    this.counter++
+  }
+  changeStyle(){
+    if (this.counter === 5){
+      return 'blue'
+    }
+  }
 
 }

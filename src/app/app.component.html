@@ -1,14 +1,10 @@
-<h3> this is main app component</h3>
-<h4> welcome to app{{title}}</h4>
+<div class="container">
+    <div class="row">
+        <div class="vol-md-12">
 
-<red-app></red-app>
-<green-app></green-app>
-<blue-app>  </blue-app>
+            <app-recipe></app-recipe>
+            <app-shopping-list></app-shopping-list>
 
-<label for = "Fname"> First Name</label>
-<input type="text" name = "Fname" placeholder="fname" [(ngModel)] = "name" >
-
-
-<p> {{name}}</p>
-<button (click)="resetName()" [disabled] = "checkName()" > Reset  </button>
-<!-- <button (click)="resetName()" [disabled] = name.length > Reset  </button> --> 
+        </div>
+    </div>
+</div>
